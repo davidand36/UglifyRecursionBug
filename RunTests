@@ -7,8 +7,8 @@ npm install
 ./UglifyAndRun
 
 echo
-echo Using uglify-js 3.3.5
-cp package.3.3.5 package.json
+echo Using uglify-js 3.3.6
+cp package.3.3.6 package.json
 rm -rf node_modules
 npm install
 ./UglifyAndRun
