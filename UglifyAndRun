@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo Uglifying
+node UglifyFile.js RecursionTest.js
+echo Running original
+node RecursionTest.js
+echo Running uglified
+node RecursionTest.min.js
