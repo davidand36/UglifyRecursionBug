@@ -18,7 +18,6 @@ var downCounter = (function( ) {
     //=========================================================================
 
     function run( ) {
-
         countDown( );
 
         //-----------------------------------------------------------------
@@ -30,16 +29,10 @@ var downCounter = (function( ) {
 
             function doNext( ) { //recursive
                 if ( counter >= 0 ) {
-                    handleCount( counter--, doNext );
+                    console.log( counter-- );
+                    doNext( );
                 }
             }
-        }
-
-        //-----------------------------------------------------------------
-
-        function handleCount( ct, callback ) {
-            console.log( ct );
-            callback( );
         }
     }
 
